@@ -1,5 +1,3 @@
-veriqr-landing/
-<img width="1536" height="1024" alt="logo-veriqr png" src="https://github.com/user-attachments/assets/d9cdc67e-f2ee-4f5b-ad74-f3aa0be0b557" />
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -10,7 +8,7 @@ veriqr-landing/
 </head>
 <body>
   <header>
-    <img src="logo-veriqr.png" alt="Logo VeriQR" class="logo">
+    <img src="logo-veriqr.png" alt="Logotipo de VeriQR" class="logo" width="200">
     <nav>
       <a href="#como-funciona">Cómo funciona</a>
       <a href="#contacto">Contacto</a>
