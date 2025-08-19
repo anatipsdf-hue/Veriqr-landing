@@ -1,8 +1,6 @@
 veriqr-landing/
- ├── index.html
- ├── style.css
- └── logo-veriqr.png   (el logo que ya tenemos)
-<!DOCTYPE html>
+<!DOC<img width="1536" height="1024" alt="logo-veriqr png" src="https://github.com/user-attachments/assets/d9cdc67e-f2ee-4f5b-ad74-f3aa0be0b557" />
+TYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
