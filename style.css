@@ -12,27 +12,39 @@ body {
 /* Cabecera */
 header {
   display: flex;
+  justify-content: space-between; /* Logo a la izq., menú a la der. */
   align-items: center;
-  justify-content: center; 
-  padding: 15px;
-  background: white;      
+  padding: 15px 50px;
+  background: white;  /* Fondo limpio */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra ligera */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-header img {
-  height: 80px;
-  width: auto; 
-  display: block;
+header .logo img {
+  height: 60px; /* Ajusta el tamaño del logo */
+  width: auto;
 }
 
-nav a {
-  color: white;
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li a {
   text-decoration: none;
-  margin-left: 20px;
-  font-weight: 500;
+  font-size: 16px;
+  color: #003366; /* Azul corporativo */
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
 
-nav a:hover {
-  text-decoration: underline;
+header nav ul li a:hover {
+  color: #00aaff; /* Azul más vivo al pasar el ratón */
 }
 
 /* Hero */
