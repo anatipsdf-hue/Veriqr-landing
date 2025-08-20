@@ -1,164 +1,113 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
-
-body {
-  font-family: 'Poppins', sans-serif;
+/* ===== RESET ===== */
+* {
   margin: 0;
   padding: 0;
-  background-color: #f9f9fb;
-  color: #333;
-  line-height: 1.6;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
 }
 
-/* Cabecera */
+/* ===== HEADER ===== */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px 50px;
-  background: white; 
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  background: #ffffff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
   position: sticky;
   top: 0;
   z-index: 1000;
 }
 
-header .logo img {
-  height: 60px; 
-  width: auto;
-}
-
-header nav ul {
-  list-style: none;
+.logo {
   display: flex;
-  gap: 30px;
-  margin: 0;
-  padding: 0;
+  align-items: center;
 }
 
-header nav ul li a {
-  text-decoration: none;
-  font-size: 16px;
-  color: #003366;
+.logo img {
+  height: 100px;
+  margin-right: 12px;
+}
+
+.logo h1 {
+  font-size: 30px;
   font-weight: bold;
-  transition: color 0.3s ease;
+  color: #0a0a0a;
+  margin: 0;
 }
 
-header nav ul li a:hover {
-  color: #00aaff;
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
 }
 
-/* Hero */
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #007bff;
+}
+
+nav ul li .btn {
+  background: #28a745;
+  color: white !important;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+nav ul li .btn:hover {
+  background: #218838;
+}
+
+/* ===== HERO ===== */
 .hero {
-  text-align: center;
-  padding: 80px 20px;
-  background: linear-gradient(to right, #1a237e, #0d47a1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 80px;
+  background: linear-gradient(135deg, #007bff, #0056b3);
   color: white;
 }
 
-.hero h1 {
-  font-size: 2.5rem;
+.hero-content {
+  max-width: 50%;
+}
+
+.hero-content h2 {
+  font-size: 42px;
   margin-bottom: 20px;
 }
 
-.hero p {
-  font-size: 1.2rem;
-  margin-bottom: 30px;
+.hero-content p {
+  font-size: 20px;
+  margin-bottom: 25px;
 }
 
-.hero a {
-  display: inline-block;
-  padding: 12px 30px;
-  background: #2e7d32;
+.hero-content .cta {
+  background: #28a745;
   color: white;
+  padding: 16px 28px;
+  border-radius: 8px;
+  font-size: 20px;
   text-decoration: none;
-  border-radius: 30px;
-  font-weight: 600;
-  transition: 0.3s;
+  font-weight: bold;
+  transition: background 0.3s;
 }
 
-.hero a:hover {
-  background: #1b5e20;
+.hero-content .cta:hover {
+  background: #218838;
 }
 
-/* Secciones generales */
-section {
-  padding: 60px 20px;
-  max-width: 1000px;
-  margin: auto;
-}
-
-h2 {
-  text-align: center;
-  margin-bottom: 40px;
-  font-size: 2rem;
-  color: #0d47a1;
-}
-
-/* Ventajas y Testimonios */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-}
-
-.card {
-  background: white;
-  padding: 20px;
+.hero-image img {
+  max-width: 450px;
   border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  text-align: center;
-}
-
-/* Cómo funciona */
-.steps {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.step {
-  background: #e3f2fd;
-  padding: 20px;
-  border-radius: 10px;
-  flex: 1;
-  min-width: 200px;
-  text-align: center;
-  font-weight: bold;
-  color: #0d47a1;
-}
-
-/* Contacto */
-form {
-  text-align: center;
-}
-
-form input[type="email"] {
-  padding: 10px;
-  width: 250px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-form button {
-  padding: 10px 20px;
-  border: none;
-  background: #0d47a1;
-  color: white;
-  font-weight: bold;
-  border-radius: 5px;
-  margin-left: 10px;
-  cursor: pointer;
-}
-
-form button:hover {
-  background: #1565c0;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 20px;
-  background: #0d47a1;
-  color: white;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
