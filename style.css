@@ -190,3 +190,82 @@ footer {
   color: white;
   margin-top: 40px;
 }
+/* === Sección de Precios === */
+.pricing {
+  padding: 4rem 2rem;
+  background: #f9fafb;
+  text-align: center;
+}
+
+.pricing h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #1e3a8a;
+}
+
+.pricing .grid {
+  display: grid;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .pricing .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.pricing .card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.pricing .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+}
+
+.pricing .card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #111827;
+}
+
+.pricing .card .price {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2563eb;
+  margin: 0.5rem 0 1rem;
+}
+
+.pricing .card p {
+  margin: 0.3rem 0;
+  color: #4b5563;
+}
+
+.pricing .btn {
+  display: inline-block;
+  margin-top: 1rem;
+  background: #2563eb;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 0.75rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.2s ease;
+}
+
+.pricing .btn:hover {
+  background: #1d4ed8;
+}
+
+/* === Plan destacado === */
+.pricing .card.destacado {
+  border: 2px solid #2563eb;
+  transform: scale(1.05);
+}
+
