@@ -18,7 +18,9 @@
       <ul>
         <li><a href="#porque">Por qué VeriQR</a></li>
         <li><a href="#como-funciona">Cómo funciona</a></li>
-        <li><a href="#formulario" class="btn">Apúntate gratis</a></li>
+        <li><a href="#precios">Precios</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#formulario" class="btn">Empieza gratis</a></li>
       </ul>
     </nav>
   </header>
@@ -26,9 +28,9 @@
   <!-- HERO -->
   <section class="hero">
     <div class="hero-content">
-      <h2>Cumple con VeriFactu ¡sin complicaciones!</h2>
-      <p>Tu facturación con QR obligatorio, de forma rápida, segura y legal.</p>
-      <a href="#formulario" class="btn">Apúntate gratis</a>
+      <h2>Cumple con VeriFactu en 48h sin cambiar tu software</h2>
+      <p>Genera facturas con QR y registros inalterables sin complicaciones.</p>
+      <a href="#formulario" class="btn">Prueba gratis con 5 facturas</a>
     </div>
     <div class="hero-image">
       <img src="mockup.png" alt="Ejemplo de VeriQR">
@@ -57,7 +59,79 @@
   <!-- CÓMO FUNCIONA -->
   <section id="como-funciona" class="features">
     <h2>Cómo funciona</h2>
-    <p>Sube tu factura desde el ordenador y te devolvemos el documento con su QR listo para cumplir la ley.</p>
+    <div class="grid">
+      <div class="card">
+        <h3>1. Sube tu factura</h3>
+        <p>PDF, CSV o JSON. También desde formulario.</p>
+      </div>
+      <div class="card">
+        <h3>2. Generamos QR y registro</h3>
+        <p>Añadimos el código QR oficial y creamos el registro de alta con hash.</p>
+      </div>
+      <div class="card">
+        <h3>3. Descarga lista para enviar</h3>
+        <p>Factura válida con QR + export de registros para la AEAT.</p>
+      </div>
+    </div>
+  </section>
+
+    <!-- PRECIOS -->
+  <section id="precios" class="pricing">
+    <h2>Planes simples y claros</h2>
+    <div class="grid">
+      <!-- Plan Básico -->
+      <div class="card">
+        <h3>Básico</h3>
+        <p class="price">14,95 €/mes</p>
+        <p>Incluye <strong>250 facturas</strong></p>
+        <p>0,10 € por factura adicional</p>
+        <a href="#formulario" class="btn">Elegir</a>
+      </div>
+
+      <!-- Plan Pro -->
+      <div class="card destacado">
+        <h3>Pro</h3>
+        <p class="price">29,95 €/mes</p>
+        <p>Incluye <strong>500–1000 facturas</strong></p>
+        <p>0,03 € por factura adicional</p>
+        <a href="#formulario" class="btn">Elegir</a>
+      </div>
+
+      <!-- Plan Ultra -->
+      <div class="card">
+        <h3>Ultra</h3>
+        <p class="price">89,95 €/mes</p>
+        <p>Incluye <strong>hasta 5000 facturas</strong></p>
+        <p>0,02 € por factura adicional</p>
+        <a href="#formulario" class="btn">Elegir</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FAQ -->
+  <section id="faq" class="faq">
+    <h2>Preguntas frecuentes</h2>
+    <div class="faq-list">
+      <div>
+        <h4>¿Es obligatorio el QR?</h4>
+        <p>Sí, desde 2026 todas las facturas emitidas por un SIF deben incluirlo.</p>
+      </div>
+      <div>
+        <h4>¿Tengo que enviar todo a la AEAT?</h4>
+        <p>Solo si eliges modalidad VERI*FACTU. En NO VERI*FACTU conservas los registros firmados y exportables.</p>
+      </div>
+      <div>
+        <h4>¿Sirve para facturas simplificadas?</h4>
+        <p>Sí, también adaptamos tickets y simplificadas.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="cta">
+    <h2>Empieza gratis hoy mismo</h2>
+    <a href="#formulario" class="btn">Quiero probar VeriQR</a>
   </section>
 
   <!-- FORMULARIO -->
@@ -65,14 +139,16 @@
     <h2>Apúntate gratis</h2>
     <p>Déjanos tu correo y te avisaremos cuando VeriQR esté disponible.</p>
     <form action="https://formspree.io/f/mdkdrlee" method="POST">
+      <input type="text" name="nombre" placeholder="Tu nombre" required>
       <input type="email" name="email" placeholder="Tu correo electrónico" required>
-      <button type="submit">Quiero estar informado</button>
+      <input type="tel" name="telefono" placeholder="WhatsApp (opcional)">
+      <button type="submit">Empezar ahora</button>
     </form>
   </section>
 
   <!-- FOOTER -->
   <footer>
-    <p>© 2025 VeriQR.es - Todos los derechos reservados</p>
+    <p>© 2025 VeriQR.es - Cumple VERI*FACTU sin complicaciones</p>
   </footer>
 
 </body>
