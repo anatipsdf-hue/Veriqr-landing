@@ -1,128 +1,181 @@
-/* === General === */
+/* ===== RESET ===== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: system-ui, sans-serif;
-}
-
-html {
-  scroll-behavior: smooth;
+  font-family: 'Arial', sans-serif;
 }
 
 body {
   line-height: 1.6;
   color: #333;
+  background: #f9fafb;
 }
 
-/* === Header === */
+/* ===== HEADER ===== */
 header {
-  background: #fff;
-  padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  padding: 15px 50px;
+  background: #ffffff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
   position: sticky;
   top: 0;
   z-index: 1000;
 }
 
 .logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #2563eb;
+  display: flex;
+  align-items: center;
 }
 
-nav a {
-  margin-left: 1.5rem;
+.logo img {
+  height: 80px;
+  margin-right: 12px;
+}
+
+.logo h1 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #0a0a0a;
+  margin: 0;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+nav ul li a {
   text-decoration: none;
   color: #333;
+  font-size: 16px;
   font-weight: 500;
+  transition: color 0.3s;
 }
 
-nav a.btn {
-  background: #2563eb;
-  color: white;
-  padding: 0.5rem 1rem;
-  border-radius: 0.5rem;
+nav ul li a:hover {
+  color: #007bff;
 }
 
-nav a.btn:hover {
-  background: #1d4ed8;
+nav ul li .btn {
+  background: #28a745;
+  color: white !important;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background 0.3s;
 }
 
-/* === Hero === */
+nav ul li .btn:hover {
+  background: #218838;
+}
+
+/* ===== HERO ===== */
 .hero {
-  text-align: center;
-  padding: 5rem 2rem;
-  background: #f9fafb;
-}
-
-.hero h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  color: #1e3a8a;
-}
-
-.hero p {
-  margin-bottom: 2rem;
-  color: #555;
-}
-
-.btn {
-  display: inline-block;
-  background: #2563eb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 80px;
+  background: linear-gradient(135deg, #007bff, #0056b3);
   color: white;
-  padding: 0.8rem 1.5rem;
-  border-radius: 0.75rem;
+}
+
+.hero-content {
+  max-width: 50%;
+}
+
+.hero-content h2 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+.hero-content .cta {
+  background: #28a745;
+  color: white;
+  padding: 16px 28px;
+  border-radius: 8px;
+  font-size: 20px;
   text-decoration: none;
   font-weight: bold;
-  transition: background 0.2s ease;
+  transition: background 0.3s;
 }
 
-.btn:hover {
-  background: #1d4ed8;
+.hero-content .cta:hover {
+  background: #218838;
 }
 
-.btn-lg {
-  font-size: 1.25rem;
-  padding: 1rem 2rem;
+.hero-image img {
+  max-width: 450px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
-/* === Features === */
-.features {
-  padding: 4rem 2rem;
+/* ===== SECCIONES GENERALES ===== */
+section {
+  padding: 60px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2rem;
+  color: #0d47a1;
+}
+
+/* ===== POR QUÉ VERIQR ===== */
+.porque p {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #444;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* ===== VENTAJAS / FEATURES ===== */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   text-align: center;
 }
 
-.features h2 {
-  font-size: 2rem;
-  margin-bottom: 2rem;
-  color: #1e3a8a;
+/* ===== CÓMO FUNCIONA ===== */
+.steps {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
-.features .grid {
-  display: grid;
-  gap: 2rem;
-  max-width: 1000px;
-  margin: 0 auto;
+.step {
+  background: #e3f2fd;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1;
+  min-width: 200px;
+  text-align: center;
+  font-weight: bold;
+  color: #0d47a1;
 }
 
-@media (min-width: 768px) {
-  .features .grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-.features .card {
-  background: #fff;
-  padding: 2rem;
-  border-radius: 1rem;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-}
-
-/* === Pricing === */
+/* ===== PRECIOS ===== */
 .pricing {
   padding: 4rem 2rem;
   background: #f9fafb;
@@ -179,105 +232,48 @@ nav a.btn:hover {
   color: #4b5563;
 }
 
+.pricing .btn {
+  display: inline-block;
+  margin-top: 1rem;
+  background: #2563eb;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 0.75rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.2s ease;
+}
+
+.pricing .btn:hover {
+  background: #1d4ed8;
+}
+
 .pricing .card.destacado {
   border: 2px solid #2563eb;
   transform: scale(1.05);
 }
 
-/* === Sección Por qué VeriQR === */
-.porque {
-  padding: 4rem 2rem;
-  background: #ffffff;
-  text-align: center;
-}
-
-.porque h2 {
-  font-size: 2rem;
-  margin-bottom: 2rem;
-  color: #1e3a8a;
-}
-
-.porque .grid {
-  display: grid;
-  gap: 2rem;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-@media (min-width: 768px) {
-  .porque .grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-.porque .card {
-  background: #f9fafb;
-  padding: 2rem;
-  border-radius: 1rem;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.porque .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
-}
-
-.porque .card h3 {
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
-  color: #111827;
-}
-
-.porque .card p {
-  color: #4b5563;
-}
-
-/* === FAQ === */
-.faq {
-  padding: 4rem 2rem;
-  background: #fff;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.faq h2 {
-  font-size: 2rem;
-  text-align: center;
-  margin-bottom: 2rem;
-  color: #1e3a8a;
-}
-
-.faq-item {
+/* ===== FAQ ===== */
+.faq .faq-item {
+  background: white;
   margin-bottom: 1rem;
-  border-bottom: 1px solid #ddd;
-  padding-bottom: 1rem;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
 }
 
-.faq-question {
-  background: none;
-  border: none;
-  font-weight: bold;
-  font-size: 1rem;
-  width: 100%;
-  text-align: left;
-  cursor: pointer;
-  color: #2563eb;
+.faq .faq-item h3 {
+  font-size: 1.2rem;
+  color: #0d47a1;
+  margin-bottom: 0.5rem;
 }
 
-.faq-answer {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease;
-  color: #555;
-}
-
-/* === CTA final === */
+/* ===== CTA ===== */
 .cta {
+  text-align: center;
+  padding: 4rem 2rem;
   background: linear-gradient(135deg, #2563eb, #1e3a8a);
   color: white;
-  text-align: center;
-  padding: 3rem 2rem;
 }
 
 .cta h2 {
@@ -285,66 +281,65 @@ nav a.btn:hover {
   margin-bottom: 1rem;
 }
 
-.cta p {
-  margin-bottom: 2rem;
-  font-size: 1.2rem;
-}
-
-/* === Formulario === */
-.form-section {
-  padding: 4rem 2rem;
-  text-align: center;
-  background: #f9fafb;
-}
-
-.form-section form {
-  max-width: 400px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.form-section input,
-.form-section button {
-  padding: 1rem;
-  border-radius: 0.5rem;
-  border: 1px solid #ddd;
-  font-size: 1rem;
-}
-
-.form-section button {
-  background: #2563eb;
+.cta a {
+  display: inline-block;
+  margin-top: 1rem;
+  background: #22c55e;
   color: white;
+  padding: 1rem 2rem;
+  border-radius: 0.75rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.2s ease;
+}
+
+.cta a:hover {
+  background: #16a34a;
+}
+
+/* ===== FORMULARIO ===== */
+form {
+  text-align: center;
+}
+
+form input[type="email"] {
+  padding: 10px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  padding: 10px 20px;
   border: none;
+  background: #0d47a1;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-left: 10px;
   cursor: pointer;
 }
 
-.form-section button:hover {
-  background: #1d4ed8;
+form button:hover {
+  background: #1565c0;
 }
 
-/* === Footer === */
-footer {
-  background: #111827;
-  color: #ccc;
-  padding: 1.5rem 2rem;
+/* ===== FOOTER ===== */
+footer.footer {
+  text-align: center;
+  padding: 20px;
+  background: #0d47a1;
+  color: white;
+  font-size: 0.9rem;
 }
 
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.footer-links a {
-  margin-left: 1rem;
-  color: #ccc;
+footer.footer a {
+  color: #bbdefb;
   text-decoration: none;
+  margin: 0 10px;
 }
 
-.footer-links a:hover {
-  color: #fff;
+footer.footer a:hover {
+  text-decoration: underline;
 }
+
