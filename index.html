@@ -202,12 +202,20 @@
 
   <script>
   // ---- Menú móvil
-  const toggle = document.getElementById('menuToggle');
-  const nav = document.getElementById('mainNav');
-  toggle.addEventListener('click', () => {
-    const open = nav.classList.toggle('open');
-    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+ const toggle = document.getElementById('menuToggle');
+const nav = document.getElementById('mainNav');
+
+toggle.addEventListener('click', () => {
+  const open = nav.classList.toggle('open');
+  toggle.setAttribute('aria-expanded', open);
+});
+
+nav.querySelectorAll('a').forEach(a => {
+  a.addEventListener('click', () => {
+    nav.classList.remove('open');
+    toggle.setAttribute('aria-expanded', 'false');
   });
+});
 
   // ---- Scroll interno: cerrar menú en móvil
   document.querySelectorAll('#mainNav a').forEach(a => {
@@ -237,16 +245,20 @@
   });
 
   // ---- Banner de cookies (solo informativo; no cargamos analítica)
-  (function(){
-    const key = 'veriqr_cookies_v1';
-    if (!localStorage.getItem(key)) {
-      document.getElementById('cookieBanner').hidden = false;
-    }
-    document.getElementById('cookieAccept').addEventListener('click', () => {
-      localStorage.setItem(key, 'accepted-tech');
-      document.getElementById('cookieBanner').hidden = true;
-    });
-  })();
+ (function(){
+  const key = 'veriqr_cookie_consent';
+  const banner = document.getElementById('cookieBanner');
+  const accept = document.getElementById('cookieAccept');
+
+  if (!localStorage.getItem(key)) {
+    banner.hidden = false;
+  }
+
+  accept.addEventListener('click', () => {
+    localStorage.setItem(key, 'accepted');
+    banner.hidden = true;
+  });
+})();
   </script>
 </body>
 </html>
