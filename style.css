@@ -1,237 +1,114 @@
-/* ===== RESET ===== */
-* {
+/* Reset */
+body, h1, h2, h3, p, ul {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: 'Arial', sans-serif;
 }
-
 body {
+  font-family: Arial, sans-serif;
   line-height: 1.6;
-  color: #333;
+  scroll-behavior: smooth;
   background: #f9fafb;
+  color: #111827;
 }
-
-/* ===== HEADER ===== */
-header {
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 1rem;
+}
+.flex-between {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 50px;
-  background: #ffffff;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+.text-center { text-align: center; }
+
+/* Header */
+.header {
+  background: #fff;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
   position: sticky;
   top: 0;
   z-index: 1000;
 }
-
 .logo {
-  display: flex;
-  align-items: center;
+  height: 40px;
 }
-
-.logo img {
-  height: 80px;
-  margin-right: 12px;
-}
-
-.logo h1 {
-  font-size: 28px;
-  font-weight: bold;
-  color: #0a0a0a;
-  margin: 0;
-}
-
-nav ul {
-  display: flex;
-  list-style: none;
-  gap: 25px;
-}
-
-nav ul li a {
+.header nav a {
+  margin: 0 0.8rem;
   text-decoration: none;
-  color: #333;
-  font-size: 16px;
-  font-weight: 500;
-  transition: color 0.3s;
-}
-
-nav ul li a:hover {
-  color: #007bff;
-}
-
-nav ul li .btn {
-  background: #28a745;
-  color: white !important;
-  padding: 10px 18px;
-  border-radius: 6px;
-  font-weight: bold;
-  transition: background 0.3s;
-}
-
-nav ul li .btn:hover {
-  background: #218838;
-}
-
-/* ===== HERO ===== */
-.hero {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 80px 80px;
-  background: linear-gradient(135deg, #007bff, #0056b3);
-  color: white;
-}
-
-.hero-content {
-  max-width: 50%;
-}
-
-.hero-content h2 {
-  font-size: 42px;
-  margin-bottom: 20px;
-}
-
-.hero-content p {
-  font-size: 20px;
-  margin-bottom: 25px;
-}
-
-.hero-content .cta {
-  background: #28a745;
-  color: white;
-  padding: 16px 28px;
-  border-radius: 8px;
-  font-size: 20px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background 0.3s;
-}
-
-.hero-content .cta:hover {
-  background: #218838;
-}
-
-.hero-image img {
-  max-width: 450px;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-}
-
-/* ===== SECCIONES GENERALES ===== */
-section {
-  padding: 60px 20px;
-  max-width: 1100px;
-  margin: auto;
-}
-
-h2 {
-  text-align: center;
-  margin-bottom: 40px;
-  font-size: 2rem;
-  color: #0d47a1;
-}
-
-/* ===== POR QUÉ VERIQR ===== */
-.porque p {
-  text-align: center;
-  font-size: 1.2rem;
-  color: #444;
-  max-width: 800px;
-  margin: auto;
-}
-
-/* ===== VENTAJAS / FEATURES ===== */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-}
-
-.card {
-  background: white;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  text-align: center;
-}
-
-/* ===== CÓMO FUNCIONA ===== */
-.steps {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.step {
-  background: #e3f2fd;
-  padding: 20px;
-  border-radius: 10px;
-  flex: 1;
-  min-width: 200px;
-  text-align: center;
-  font-weight: bold;
-  color: #0d47a1;
-}
-
-/* ===== PRECIOS ===== */
-.pricing {
-  padding: 4rem 2rem;
-  background: #f9fafb;
-  text-align: center;
-}
-
-.pricing h2 {
-  font-size: 2rem;
-  margin-bottom: 2rem;
   color: #1e3a8a;
+  font-weight: bold;
+}
+.btn-header {
+  background: #2563eb;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
 }
 
+/* Hero */
+.hero {
+  padding: 4rem 2rem;
+  background: #2563eb;
+  color: #fff;
+}
+.hero h1 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+.hero p {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+.btn-hero {
+  background: #fff;
+  color: #2563eb;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Secciones */
+section { padding: 3rem 1rem; }
+.porque, .funciona, .faq, .cta { background: #fff; }
+
+/* Grid */
+.grid-3 {
+  display: grid;
+  gap: 2rem;
+}
+@media (min-width: 768px) {
+  .grid-3 { grid-template-columns: repeat(3, 1fr); }
+}
+
+/* Cards */
+.card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  text-align: center;
+}
+.card h3 { margin-bottom: 0.5rem; }
+
+/* Precios */
+.pricing { background: #f9fafb; text-align: center; }
 .pricing .grid {
   display: grid;
   gap: 2rem;
   max-width: 1000px;
-  margin: 0 auto;
+  margin: 2rem auto;
 }
-
 @media (min-width: 768px) {
-  .pricing .grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
+  .pricing .grid { grid-template-columns: repeat(3, 1fr); }
 }
-
-.pricing .card {
-  background: #fff;
-  padding: 2rem;
-  border-radius: 1rem;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.pricing .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
-}
-
-.pricing .card h3 {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-  color: #111827;
-}
-
 .pricing .card .price {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: bold;
   color: #2563eb;
-  margin: 0.5rem 0 1rem;
 }
-
-.pricing .card p {
-  margin: 0.3rem 0;
-  color: #4b5563;
-}
-
 .pricing .btn {
   display: inline-block;
   margin-top: 1rem;
@@ -241,105 +118,69 @@ h2 {
   border-radius: 0.75rem;
   text-decoration: none;
   font-weight: bold;
-  transition: background 0.2s ease;
 }
-
-.pricing .btn:hover {
-  background: #1d4ed8;
-}
-
 .pricing .card.destacado {
   border: 2px solid #2563eb;
   transform: scale(1.05);
 }
 
-/* ===== FAQ ===== */
+/* FAQ */
 .faq .faq-item {
-  background: white;
-  margin-bottom: 1rem;
-  padding: 1rem 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-}
-
-.faq .faq-item h3 {
-  font-size: 1.2rem;
-  color: #0d47a1;
-  margin-bottom: 0.5rem;
-}
-
-/* ===== CTA ===== */
-.cta {
-  text-align: center;
-  padding: 4rem 2rem;
-  background: linear-gradient(135deg, #2563eb, #1e3a8a);
-  color: white;
-}
-
-.cta h2 {
-  font-size: 2rem;
   margin-bottom: 1rem;
 }
-
-.cta a {
-  display: inline-block;
-  margin-top: 1rem;
-  background: #22c55e;
-  color: white;
-  padding: 1rem 2rem;
-  border-radius: 0.75rem;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background 0.2s ease;
-}
-
-.cta a:hover {
-  background: #16a34a;
-}
-
-/* ===== FORMULARIO ===== */
-form {
-  text-align: center;
-}
-
-form input[type="email"] {
-  padding: 10px;
-  width: 250px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-form button {
-  padding: 10px 20px;
+.faq-question {
+  width: 100%;
+  text-align: left;
+  padding: 1rem;
+  background: #f3f4f6;
   border: none;
-  background: #0d47a1;
-  color: white;
+  font-size: 1rem;
   font-weight: bold;
-  border-radius: 5px;
-  margin-left: 10px;
+  cursor: pointer;
+}
+.faq-answer {
+  display: none;
+  padding: 0.8rem 1rem;
+  background: #fff;
+  border-left: 3px solid #2563eb;
+}
+
+/* CTA */
+.cta {
+  background: #2563eb;
+  color: #fff;
+  text-align: center;
+}
+.cta .form {
+  max-width: 400px;
+  margin: 1.5rem auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.cta input, .cta button {
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  border: none;
+}
+.cta input { width: 100%; }
+.cta button {
+  background: #fff;
+  color: #2563eb;
+  font-weight: bold;
   cursor: pointer;
 }
 
-form button:hover {
-  background: #1565c0;
-}
-
-/* ===== FOOTER ===== */
-footer.footer {
+/* Footer */
+.footer {
+  background: #fff;
+  padding: 1.5rem;
   text-align: center;
-  padding: 20px;
-  background: #0d47a1;
-  color: white;
   font-size: 0.9rem;
+  color: #6b7280;
 }
-
-footer.footer a {
-  color: #bbdefb;
+.footer nav a {
+  margin: 0 0.5rem;
   text-decoration: none;
-  margin: 0 10px;
+  color: #2563eb;
 }
-
-footer.footer a:hover {
-  text-decoration: underline;
-}
-
