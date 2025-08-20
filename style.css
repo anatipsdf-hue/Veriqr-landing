@@ -184,6 +184,55 @@ nav a.btn:hover {
   transform: scale(1.05);
 }
 
+/* === Sección Por qué VeriQR === */
+.porque {
+  padding: 4rem 2rem;
+  background: #ffffff;
+  text-align: center;
+}
+
+.porque h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #1e3a8a;
+}
+
+.porque .grid {
+  display: grid;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .porque .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.porque .card {
+  background: #f9fafb;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.porque .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+}
+
+.porque .card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #111827;
+}
+
+.porque .card p {
+  color: #4b5563;
+}
+
 /* === FAQ === */
 .faq {
   padding: 4rem 2rem;
