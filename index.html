@@ -1,189 +1,168 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>VeriQR · Cumple VERI*FACTU sin complicaciones</title>
-  <meta name="description" content="VeriQR ayuda a pymes y autónomos a añadir el QR y la leyenda obligatoria a sus facturas y a generar registros inalterables. Cumple VERI*FACTU sin cambiar de software.">
-  <link rel="canonical" href="https://www.veriqr.es/" />
-
-  <!-- Open Graph / Twitter -->
-  <meta property="og:title" content="VeriQR · Cumple VERI*FACTU sin complicaciones">
-  <meta property="og:description" content="Añade QR y leyenda a tus facturas en minutos. Registros inalterables. Sin cambiar tu software.">
-  <meta property="og:url" content="https://www.veriqr.es/">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="logo-veriqr.png">
-  <meta name="twitter:card" content="summary_large_image">
-
-  <!-- Favicon -->
-  <link rel="icon" href="favicon.ico">
-
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="VeriQR: Genera y gestiona códigos QR seguros para tu negocio. Fácil, rápido y confiable.">
+  <title>VeriQR - Generador de QR Seguro</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <a href="#main" class="skip-link">Saltar al contenido</a>
 
   <!-- Header -->
-  <header class="header" role="banner">
+  <header class="header">
     <div class="container header-inner">
-      <a class="brand" href="#top" aria-label="Inicio">
-        <img src="logo-veriqr.png" alt="VeriQR" width="160" height="40" />
+      <a href="#" class="brand">
+        <img src="logo-veriqr.png" alt="VeriQR Logo">
       </a>
-
-      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mainNav">
-        ☰
-      </button>
-
-      <nav id="mainNav" class="nav" aria-label="Navegación principal">
+      <button class="menu-toggle" aria-label="Menú">☰</button>
+      <nav class="nav">
         <a href="#porque">Por qué VeriQR</a>
-        <a href="#como-funciona">Cómo funciona</a>
+        <a href="#pasos">Cómo funciona</a>
         <a href="#precios">Precios</a>
         <a href="#faq">FAQ</a>
-        <a class="btn btn--sm" href="#cta">Empieza gratis</a>
+        <a href="#contacto">Contacto</a>
       </nav>
     </div>
   </header>
 
-  <main id="contenido">
+  <main id="main">
     <!-- Hero -->
-    <section class="hero" id="top">
+    <section class="hero">
       <div class="container hero-inner">
         <div class="hero-copy">
-          <h1>Cumple VERI*FACTU en 48h sin cambiar tu software</h1>
-          <p>Añade el código QR y la leyenda obligatoria, genera registros inalterables y despreocúpate de la AEAT.</p>
+          <h1>QR seguros y fáciles para tu negocio</h1>
+          <p>Con VeriQR generas códigos QR confiables que transmiten confianza a tus clientes.</p>
           <div class="hero-ctas">
-            <a class="btn" href="#cta">Prueba gratis (5 facturas)</a>
-            <a class="btn btn--ghost" href="#precios">Ver planes</a>
+            <a href="#precios" class="btn">Ver planes</a>
+            <a href="#contacto" class="btn btn--ghost">Solicitar demo</a>
           </div>
         </div>
         <div class="hero-media">
-          <img src="mockup.png" alt="Ejemplo de factura con QR de VeriQR" width="560" height="380" loading="lazy" />
+          <img src="hero-qr.png" alt="Ejemplo de QR de VeriQR">
         </div>
       </div>
     </section>
 
-    <!-- Por qué -->
+    <!-- Por qué VeriQR -->
     <section id="porque" class="section">
       <div class="container">
-        <h2>¿Por qué VeriQR?</h2>
+        <h2>¿Por qué elegir VeriQR?</h2>
         <div class="grid-3">
-          <article class="card">
-            <h3>✅ Cumplimiento legal</h3>
-            <p>Listo para la nueva normativa de facturación VERI*FACTU.</p>
-          </article>
-          <article class="card">
-            <h3>⚡ Rápido y sencillo</h3>
-            <p>Sube tu factura y recibe el documento con QR integrado.</p>
-          </article>
-          <article class="card">
-            <h3>📊 Pensado para PYMES</h3>
-            <p>Ideal para autónomos y pequeñas empresas sin complicaciones.</p>
-          </article>
+          <div class="card">
+            <h3>Seguro</h3>
+            <p>Tus códigos QR están protegidos contra manipulaciones.</p>
+          </div>
+          <div class="card">
+            <h3>Fácil</h3>
+            <p>Genera y comparte QR en segundos sin conocimientos técnicos.</p>
+          </div>
+          <div class="card">
+            <h3>Profesional</h3>
+            <p>Transmite confianza con códigos QR de aspecto elegante.</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Cómo funciona -->
-    <section id="como-funciona" class="section alt">
+    <!-- Pasos -->
+    <section id="pasos" class="section alt">
       <div class="container">
-        <h2>Cómo funciona VeriQR</h2>
+        <h2>Cómo funciona</h2>
         <div class="grid-3 steps">
-          <article class="card">
-            <h3>1. Sube tu factura</h3>
-            <p>PDF, CSV o JSON. También por formulario.</p>
-          </article>
-          <article class="card">
-            <h3>2. Generamos QR y registro</h3>
-            <p>Añadimos el QR oficial y creamos el registro firmado (hash).</p>
-          </article>
-          <article class="card">
-            <h3>3. Descarga lista para enviar</h3>
-            <p>Factura válida con QR + export de registros para la AEAT.</p>
-          </article>
+          <div class="card">
+            <h3>1. Regístrate</h3>
+            <p>Crea tu cuenta en pocos minutos.</p>
+          </div>
+          <div class="card">
+            <h3>2. Genera</h3>
+            <p>Personaliza y crea tu código QR seguro.</p>
+          </div>
+          <div class="card">
+            <h3>3. Comparte</h3>
+            <p>Descárgalo y úsalo en tu negocio de inmediato.</p>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Precios -->
-    <section id="precios" class="section">
+    <section id="precios" class="section pricing">
       <div class="container">
-        <h2>Planes simples y claros</h2>
-        <div class="grid-3 pricing">
-          <article class="card">
+        <h2>Planes de precios</h2>
+        <div class="grid-3">
+          <div class="card">
             <h3>Básico</h3>
-            <p class="price">14,95€ <span>/ mes</span></p>
-            <p>Incluye 250 facturas</p>
-            <p class="muted">+ 0,10€ por factura adicional</p>
-            <a class="btn btn--sm" href="#cta">Elegir</a>
-          </article>
-          <article class="card featured">
+            <p class="price">9€/mes <span>+IVA</span></p>
+            <p>1 QR activo</p>
+            <p>Soporte por email</p>
+            <a href="#contacto" class="btn">Empezar</a>
+          </div>
+          <div class="card featured">
             <h3>Pro</h3>
-            <p class="price">29,95€ <span>/ mes</span></p>
-            <p>500 – 1000 facturas</p>
-            <p class="muted">+ 0,03€ por factura adicional</p>
-            <a class="btn btn--sm" href="#cta">Elegir</a>
-          </article>
-          <article class="card">
-            <h3>Ultra</h3>
-            <p class="price">89,95€ <span>/ mes</span></p>
-            <p>Hasta 5000 facturas</p>
-            <p class="muted">+ 0,02€ por factura adicional</p>
-            <a class="btn btn--sm" href="#cta">Elegir</a>
-          </article>
+            <p class="price">19€/mes <span>+IVA</span></p>
+            <p>5 QRs activos</p>
+            <p>Soporte prioritario</p>
+            <a href="#contacto" class="btn">Elegir plan</a>
+          </div>
+          <div class="card">
+            <h3>Empresa</h3>
+            <p class="price">49€/mes <span>+IVA</span></p>
+            <p>QRs ilimitados</p>
+            <p>Soporte dedicado</p>
+            <a href="#contacto" class="btn">Contactar</a>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- FAQ -->
-    <section id="faq" class="section alt">
+    <section id="faq" class="section">
       <div class="container">
         <h2>Preguntas frecuentes</h2>
-
         <details class="faq">
-          <summary>¿Es obligatorio el QR?</summary>
-          <p>Sí, desde 2026 todas las facturas emitidas por un SIF deben incluirlo.</p>
+          <summary>¿Qué es un QR seguro?</summary>
+          <p>Es un código QR protegido contra fraudes y manipulaciones.</p>
         </details>
-
         <details class="faq">
-          <summary>¿Tengo que enviar todo a la AEAT?</summary>
-          <p>Solo si eliges modalidad VERI*FACTU. En NO VERI*FACTU conservas registros firmados y exportables.</p>
+          <summary>¿Puedo cambiar el contenido de un QR?</summary>
+          <p>Sí, desde tu panel puedes actualizar el destino de tu QR.</p>
         </details>
-
         <details class="faq">
-          <summary>¿Sirve para facturas simplificadas?</summary>
-          <p>Sí, también adaptamos tickets y facturas simplificadas.</p>
+          <summary>¿Hay permanencia?</summary>
+          <p>No, puedes darte de baja en cualquier momento.</p>
         </details>
       </div>
     </section>
 
-    <!-- CTA + Formulario -->
-    <section id="cta" class="section cta">
+    <!-- CTA / Contacto -->
+    <section id="contacto" class="section cta">
       <div class="container">
-        <h2>Empieza gratis hoy</h2>
-        <form id="leadForm" class="form" action="https://formspree.io/f/mdkdrlee" method="POST" novalidate>
-          <!-- Honeypot anti-spam -->
-          <input type="text" name="empresa" tabindex="-1" autocomplete="off" class="hp" aria-hidden="true">
-          <input type="hidden" name="_subject" value="Nuevo lead VeriQR">
+        <h2>¿Listo para empezar?</h2>
+        <p>Déjanos tu contacto y te responderemos enseguida.</p>
+        <form id="contactForm" action="https://formspree.io/f/mdkdrlee" method="POST" class="form">
           <div class="field">
-            <label for="nombre">Nombre</label>
-            <input id="nombre" name="nombre" type="text" placeholder="Tu nombre" required>
+            <label for="name">Nombre</label>
+            <input type="text" name="name" id="name" required>
           </div>
           <div class="field">
-            <label for="email">Email</label>
-            <input id="email" name="email" type="email" placeholder="tu@email.com" required>
+            <label for="email">Correo electrónico</label>
+            <input type="email" name="email" id="email" required>
           </div>
-          <button class="btn" type="submit">Empezar ahora</button>
-
-          <p id="formMsg" class="form-msg" role="status" aria-live="polite"></p>
+          <button type="submit" class="btn">Enviar</button>
+          <div class="form-msg" id="formMsg"></div>
         </form>
       </div>
     </section>
   </main>
 
-  <footer class="footer" role="contentinfo">
+  <!-- Footer -->
+  <footer class="footer">
     <div class="container footer-inner">
-      <p>© 2025 VeriQR.es · Cumple VERI*FACTU sin complicaciones · <a href="mailto:contacto@veriqr.es">contacto@veriqr.es</a></p>
-      <nav class="footer-nav" aria-label="Enlaces legales">
+      <p>&copy; 2025 VeriQR. Todos los derechos reservados.</p>
+      <nav class="footer-nav">
         <a href="aviso-legal.html">Aviso legal</a>
         <a href="privacidad.html">Política de privacidad</a>
         <a href="cookies.html">Política de cookies</a>
@@ -191,74 +170,80 @@
     </div>
   </footer>
 
-  <!-- Banner de cookies -->
-  <div id="cookieBanner" class="cookie-banner" role="dialog" aria-live="polite" aria-label="Aviso de cookies" hidden>
-    <p>Usamos cookies técnicas para que esta web funcione. Si activas analítica, lo haremos solo con tu consentimiento.</p>
+  <!-- Cookies banner -->
+  <div class="cookie-banner" id="cookieBanner">
+    <p>Usamos cookies técnicas para que esta web funcione. Más información en nuestra <a href="cookies.html" style="color:#3b82f6">política de cookies</a>.</p>
     <div class="cookie-actions">
-      <button id="cookieAccept" class="btn btn--sm">Aceptar solo técnicas</button>
-      <button id="cookieMore" class="btn btn--ghost btn--sm" onclick="location.href='cookies.html'">Más info</button>
+      <button id="aceptarCookies" class="btn">Aceptar</button>
+      <button id="rechazarCookies" class="btn btn--ghost">Solo técnicas</button>
     </div>
   </div>
 
+  <!-- Scripts -->
   <script>
-  // ---- Menú móvil
- const toggle = document.getElementById('menuToggle');
-const nav = document.getElementById('mainNav');
+    document.addEventListener("DOMContentLoaded", function () {
+      // Cookies
+      const banner = document.getElementById("cookieBanner");
+      const aceptar = document.getElementById("aceptarCookies");
+      const rechazar = document.getElementById("rechazarCookies");
 
-toggle.addEventListener('click', () => {
-  const open = nav.classList.toggle('open');
-  toggle.setAttribute('aria-expanded', open);
-});
-
-nav.querySelectorAll('a').forEach(a => {
-  a.addEventListener('click', () => {
-    nav.classList.remove('open');
-    toggle.setAttribute('aria-expanded', 'false');
-  });
-});
-
-  // ---- Scroll interno: cerrar menú en móvil
-  document.querySelectorAll('#mainNav a').forEach(a => {
-    a.addEventListener('click', () => nav.classList.remove('open'));
-  });
-
-  // ---- Formspree con fetch (mensaje in-page)
-  const form = document.getElementById('leadForm');
-  const msg = document.getElementById('formMsg');
-  form.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    msg.textContent = 'Enviando…';
-    const data = new FormData(form);
-    // cortar spam por honeypot
-    if (data.get('empresa')) return;
-    try {
-      const r = await fetch(form.action, { method: 'POST', body: data, headers: { 'Accept': 'application/json' } });
-      if (r.ok) {
-        form.reset();
-        msg.textContent = '¡Gracias! Te contactaremos muy pronto.';
-      } else {
-        msg.textContent = 'No se pudo enviar. Inténtalo de nuevo en unos minutos.';
+      function ocultarBanner() {
+        banner.style.display = "none";
       }
-    } catch {
-      msg.textContent = 'Error de red. Revisa tu conexión.';
-    }
-  });
 
-  // ---- Banner de cookies (solo informativo; no cargamos analítica)
- (function(){
-  const key = 'veriqr_cookie_consent';
-  const banner = document.getElementById('cookieBanner');
-  const accept = document.getElementById('cookieAccept');
+      if (aceptar) {
+        aceptar.addEventListener("click", () => {
+          localStorage.setItem("cookiesAceptadas", "true");
+          ocultarBanner();
+        });
+      }
 
-  if (!localStorage.getItem(key)) {
-    banner.hidden = false;
-  }
+      if (rechazar) {
+        rechazar.addEventListener("click", () => {
+          localStorage.setItem("cookiesAceptadas", "false");
+          ocultarBanner();
+        });
+      }
 
-  accept.addEventListener('click', () => {
-    localStorage.setItem(key, 'accepted');
-    banner.hidden = true;
-  });
-})();
+      if (localStorage.getItem("cookiesAceptadas") !== null) {
+        ocultarBanner();
+      }
+
+      // Menú responsive
+      const toggle = document.querySelector(".menu-toggle");
+      const nav = document.querySelector(".nav");
+      if (toggle && nav) {
+        toggle.addEventListener("click", () => {
+          nav.classList.toggle("open");
+        });
+        nav.querySelectorAll("a").forEach(link => {
+          link.addEventListener("click", () => nav.classList.remove("open"));
+        });
+      }
+
+      // Formulario
+      const form = document.getElementById("contactForm");
+      const msg = document.getElementById("formMsg");
+      if (form) {
+        form.addEventListener("submit", async function (e) {
+          e.preventDefault();
+          const data = new FormData(form);
+          const res = await fetch(form.action, {
+            method: "POST",
+            body: data,
+            headers: { "Accept": "application/json" }
+          });
+          if (res.ok) {
+            msg.textContent = "✅ ¡Gracias! Te contactaremos pronto.";
+            msg.style.color = "lightgreen";
+            form.reset();
+          } else {
+            msg.textContent = "❌ Hubo un error. Intenta de nuevo.";
+            msg.style.color = "red";
+          }
+        });
+      }
+    });
   </script>
 </body>
 </html>
