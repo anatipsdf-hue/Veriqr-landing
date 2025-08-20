@@ -122,11 +122,11 @@ section {
 h2 {
   text-align: center;
   margin-bottom: 40px;
-  font-size: 2rem;
+  font-size: 2.2rem;
   color: #0d47a1;
 }
 
-/* ===== VENTAJAS ===== */
+/* Ventajas */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -139,31 +139,10 @@ h2 {
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   text-align: center;
-  transition: transform 0.3s;
 }
 
-.card:hover {
-  transform: translateY(-5px);
-}
-
-/* ===== CÓMO FUNCIONA ===== */
-.features p {
-  text-align: center;
-  font-size: 18px;
-  color: #444;
-  max-width: 700px;
-  margin: 0 auto;
-}
-
-/* ===== CONTACTO ===== */
-.contact p {
-  text-align: center;
-  margin-bottom: 20px;
-  font-size: 18px;
-  color: #444;
-}
-
-form {
+/* Formulario */
+.contact {
   text-align: center;
 }
 
@@ -189,48 +168,10 @@ form button:hover {
   background: #1565c0;
 }
 
-/* ===== REGISTRO (Empieza gratis) ===== */
-.registro {
-  background: #f8f9fa;
-  text-align: center;
-  border-radius: 12px;
-  padding: 50px 20px;
-}
-
-.registro p {
-  margin-bottom: 20px;
-  font-size: 18px;
-  color: #444;
-}
-
-.registro input[type="email"] {
-  padding: 12px;
-  width: 280px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  margin-bottom: 10px;
-}
-
-.registro button {
-  padding: 12px 24px;
-  border: none;
-  background: #28a745;
-  color: white;
-  font-weight: bold;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-.registro button:hover {
-  background: #218838;
-}
-
-/* ===== FOOTER ===== */
+/* Footer */
 footer {
   text-align: center;
   padding: 20px;
   background: #0d47a1;
   color: white;
-  margin-top: 40px;
 }
