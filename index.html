@@ -1,161 +1,141 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>VeriQR - Cumple VERI*FACTU sin complicaciones</title>
-  <link rel="stylesheet" href="style.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VeriQR - Cumple VERI*FACTU fácil y rápido</title>
+  <meta name="description" content="VeriQR añade código QR y registro inalterable a tus facturas, conforme a la normativa VERI*FACTU. Cumple sin complicaciones y sin cambiar tu software.">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+      line-height: 1.6;
+      color: #333;
+      background: #f8f9fa;
+    }
+    header {
+      background: #0d6efd;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.8rem 1.5rem;
+      background: #198754;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    section h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    .benefits {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+    .benefit {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    form {
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      max-width: 600px;
+      margin: auto;
+    }
+    footer {
+      background: #212529;
+      color: #adb5bd;
+      padding: 1rem;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+    footer a {
+      color: #adb5bd;
+      margin: 0 0.5rem;
+      text-decoration: none;
+    }
+  </style>
 </head>
 <body>
-  <!-- Header -->
-  <header>
-    <h1 class="logo">VeriQR</h1>
-    <nav>
-      <a href="#porque">Por qué VeriQR</a>
-      <a href="#como-funciona">Cómo funciona</a>
-      <a href="#precios">Precios</a>
-      <a href="#faq">FAQ</a>
-      <a href="#form" class="btn">Empieza gratis</a>
-    </nav>
-  </header>
 
-  <!-- Hero -->
-  <section class="hero">
-    <h2>Cumple VERI*FACTU en 48h sin cambiar tu software</h2>
-    <p>Añade el código QR y la leyenda obligatoria, genera registros inalterables y despreocúpate de la AEAT.</p>
-    <a href="#form" class="btn btn-lg">Prueba gratis con 5 facturas</a>
-  </section>
+<header>
+  <h1>Cumple VERI*FACTU sin complicaciones</h1>
+  <p>Integra QR y registro inalterable en tus facturas, conforme a la normativa vigente.</p>
+  <a href="#contacto" class="btn">Prueba gratis con 5 facturas</a>
+</header>
 
-  <!-- Por qué VeriQR -->
-<section id="porque" class="porque">
-  <h2>¿Por qué elegir VeriQR?</h2>
-  <div class="grid">
-    <div class="card">
-      <h3>✅ Sin cambiar tu software</h3>
-      <p>Funciona encima de lo que ya utilizas, sin migraciones ni dolores de cabeza.</p>
-    </div>
-    <div class="card">
-      <h3>⚡ Cumplimiento inmediato</h3>
-      <p>Ponte al día con VERI*FACTU en menos de 48 horas, sin complicaciones.</p>
-    </div>
-    <div class="card">
-      <h3>💰 Coste transparente</h3>
-      <p>Planes claros y simples, sin sorpresas ni permanencias.</p>
-    </div>
+<section>
+  <h2>Beneficios de VeriQR</h2>
+  <div class="benefits">
+    <div class="benefit">✅ Cumples la normativa de Hacienda sin complicaciones.</div>
+    <div class="benefit">✅ No necesitas cambiar tu software de facturación.</div>
+    <div class="benefit">✅ Facturas verificables en segundos con QR válido.</div>
   </div>
 </section>
 
-  <!-- Cómo funciona -->
-  <section id="como-funciona" class="features">
-    <h2>Cómo funciona VeriQR</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>1. Sube tu factura</h3>
-        <p>PDF, CSV o JSON. También por formulario.</p>
-      </div>
-      <div class="card">
-        <h3>2. Generamos QR y registro</h3>
-        <p>Añadimos el código QR oficial y creamos el registro de alta con hash.</p>
-      </div>
-      <div class="card">
-        <h3>3. Descarga lista para enviar</h3>
-        <p>Factura válida con QR + export de registros para la AEAT.</p>
-      </div>
-    </div>
-  </section>
+<section>
+  <h2>Cómo funciona</h2>
+  <ol>
+    <li>La empresa genera su factura con su software habitual.</li>
+    <li>VeriQR añade el código QR y registro inalterable (hash + marca temporal).</li>
+    <li>Tu cliente y Hacienda pueden verificar la factura fácilmente.</li>
+  </ol>
+</section>
 
-  <!-- Precios -->
-  <section id="precios" class="pricing">
-    <h2>Planes simples y claros</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>Básico</h3>
-        <p class="price">14.95 €/mes</p>
-        <p>Incluye 250 facturas</p>
-        <p>0.10€ por factura adicional</p>
-        <a href="#form" class="btn">Elegir</a>
-      </div>
-      <div class="card destacado">
-        <h3>Pro</h3>
-        <p class="price">29.95 €/mes</p>
-        <p>500 - 1000 facturas</p>
-        <p>0.03€ por factura adicional</p>
-        <a href="#form" class="btn">Elegir</a>
-      </div>
-      <div class="card">
-        <h3>Ultra</h3>
-        <p class="price">89.95 €/mes</p>
-        <p>Hasta 5000 facturas</p>
-        <p>0.02€ por factura adicional</p>
-        <a href="#form" class="btn">Elegir</a>
-      </div>
-    </div>
-  </section>
+<section id="contacto">
+  <h2>Solicita tu demo gratuita</h2>
+  <form action="https://formspree.io/f/XXXXX" method="POST">
+    <label for="nombre">Nombre</label><br>
+    <input type="text" id="nombre" name="nombre" required style="width:100%; margin-bottom:1rem;"><br>
+    
+    <label for="email">Email</label><br>
+    <input type="email" id="email" name="email" required style="width:100%; margin-bottom:1rem;"><br>
+    
+    <label for="empresa">Empresa</label><br>
+    <input type="text" id="empresa" name="empresa" style="width:100%; margin-bottom:1rem;"><br>
+    
+    <label>
+      <input type="checkbox" name="privacidad" required>
+      He leído y acepto la <a href="/privacidad.html" target="_blank">Política de Privacidad</a>
+    </label><br><br>
+    
+    <button type="submit" class="btn">Enviar solicitud</button>
+  </form>
+</section>
 
-  <!-- FAQ -->
-  <section id="faq" class="faq">
-    <h2>Preguntas frecuentes</h2>
-    <div class="faq-item">
-      <button class="faq-question" aria-expanded="false">¿Es obligatorio el QR?</button>
-      <div class="faq-answer">
-        <p>Sí, desde 2026 todas las facturas emitidas por un SIF deben incluirlo.</p>
-      </div>
-    </div>
-    <div class="faq-item">
-      <button class="faq-question" aria-expanded="false">¿Tengo que enviar todo a la AEAT?</button>
-      <div class="faq-answer">
-        <p>Solo si eliges modalidad VERI*FACTU. En NO VERI*FACTU conservas los registros firmados y exportables.</p>
-      </div>
-    </div>
-    <div class="faq-item">
-      <button class="faq-question" aria-expanded="false">¿Sirve para facturas simplificadas?</button>
-      <div class="faq-answer">
-        <p>Sí, también adaptamos tickets y simplificadas.</p>
-      </div>
-    </div>
-  </section>
+<footer>
+  <p>© 2025 VeriQR · Todos los derechos reservados</p>
+  <p>
+    <a href="/aviso-legal.html">Aviso Legal</a> | 
+    <a href="/privacidad.html">Privacidad</a> | 
+    <a href="/cookies.html">Cookies</a>
+  </p>
+  <small>VeriQR es un servicio de apoyo al SIF del cliente. No sustituye a su software de facturación. El cumplimiento depende de la normativa vigente.</small>
+</footer>
 
-  <!-- CTA final -->
-  <section class="cta">
-    <h2>Empieza hoy sin riesgos</h2>
-    <p>Prueba gratis con tus primeras 5 facturas</p>
-    <a href="#form" class="btn btn-lg">Empezar ahora</a>
-  </section>
-
-  <!-- Formulario -->
-  <section id="form" class="form-section">
-    <h2>Empieza gratis</h2>
-    <form action="https://formspree.io/f/mdkdrlee" method="POST">
-      <input type="text" name="nombre" placeholder="Nombre" required>
-      <input type="email" name="email" placeholder="Email" required>
-      <input type="tel" name="whatsapp" placeholder="WhatsApp (opcional)">
-      <button type="submit" class="btn btn-lg">Enviar</button>
-    </form>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <div class="footer-content">
-      <p>© 2025 VeriQR.es · Cumple VERI*FACTU sin complicaciones</p>
-      <div class="footer-links">
-        <a href="#faq">FAQ</a>
-        <a href="#precios">Precios</a>
-        <a href="#form">Contacto</a>
-      </div>
-    </div>
-  </footer>
-
-  <script>
-    // FAQ toggle
-    document.querySelectorAll('.faq-question').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const expanded = btn.getAttribute('aria-expanded') === 'true';
-        btn.setAttribute('aria-expanded', !expanded);
-        const answer = btn.nextElementSibling;
-        answer.style.maxHeight = expanded ? '0' : answer.scrollHeight + 'px';
-      });
-    });
-  </script>
 </body>
 </html>
-
