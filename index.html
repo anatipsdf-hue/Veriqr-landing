@@ -3,8 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="VeriQR - Digitaliza y organiza tus facturas con facilidad. Pensado para autónomos y pymes que necesitan eficiencia, claridad y control total.">
-  <title>VeriQR - Digitaliza tus facturas fácilmente</title>
+  <title>VeriQR - Facturas con QR conforme a normativa</title>
+  <meta name="description" content="VeriQR genera facturas con QR conforme a la normativa vigente, verificado para facilitar cumplimiento y garantizar un registro inalterable.">
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <!-- Styles -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,176 +20,155 @@
   <!-- Header -->
   <header class="header">
     <div class="container header-inner">
-      <a href="#" class="brand">
+      <a href="/" class="brand">
         <img src="logo-veriqr.png" alt="VeriQR" width="160" height="48">
-</a>
-      <button class="menu-toggle" aria-label="Menú">&#9776;</button>
+      </a>
+      <button class="menu-toggle" aria-label="Menú">☰</button>
       <nav class="nav">
         <a href="#porque">Por qué VeriQR</a>
-        <a href="#precios">Precios</a>
+        <a href="#planes">Planes</a>
         <a href="#faq">FAQ</a>
         <a href="#contacto">Contacto</a>
       </nav>
     </div>
   </header>
 
-  <main id="main">
-
-    <!-- Hero -->
-    <section class="hero">
-      <div class="container hero-inner">
-        <div class="hero-copy">
-          <h1>Digitaliza y organiza tus facturas con VeriQR</h1>
-          <p>Una solución simple, segura y pensada para autónomos y pequeñas empresas.</p>
-          <div class="hero-ctas">
-            <a href="#precios" class="btn">Ver precios</a>
-            <a href="#contacto" class="btn btn--ghost">Contactar</a>
-          </div>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <h1>Facturas con QR <br> conforme a la normativa vigente</h1>
+        <p>Verificado para facilitar cumplimiento y garantizar un <strong>registro inalterable</strong>.</p>
+        <div class="hero-ctas">
+          <a href="#contacto" class="btn">Contactar</a>
+          <a href="#planes" class="btn btn--ghost">Ver planes</a>
         </div>
-        <div class="hero-media">
-          <img src="mockup.png" alt="Ejemplo de factura digitalizada en VeriQR">
-        </div>
+        <small class="muted">
+          VeriQR es un apoyo al SIF; el cumplimiento definitivo depende del entorno técnico del cliente y normativa actual.
+        </small>
       </div>
-    </section>
-
-    <!-- Por qué VeriQR -->
-    <section id="porque" class="section alt">
-      <div class="container">
-        <h2>¿Por qué elegir VeriQR?</h2>
-        <div class="grid-3">
-          <div class="card">
-            <h3>✔️ Simplicidad</h3>
-            <p>Sube tus facturas en segundos, sin complicaciones técnicas.</p>
-          </div>
-          <div class="card">
-            <h3>🔒 Seguridad</h3>
-            <p>Tus datos están protegidos con cifrado y servidores seguros en la UE.</p>
-          </div>
-          <div class="card">
-            <h3>📊 Control</h3>
-            <p>Accede a tus facturas desde cualquier lugar y genera reportes claros.</p>
-          </div>
-        </div>
+      <div class="hero-media">
+        <img src="img/mockup-factura.png" alt="Ejemplo de factura con QR" />
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Precios -->
-    <section id="precios" class="section">
-      <div class="container">
-        <h2>Planes y precios</h2>
-        <div class="grid-3 pricing">
-          <div class="card">
-            <h3>Básico</h3>
-            <p class="price">14,95 €/mes <span>(250 facturas)</span></p>
-            <p>0,10 € por factura adicional</p>
-            <a href="#contacto" class="btn btn--sm">Contactar</a>
-          </div>
-          <div class="card featured">
-            <h3>Pro</h3>
-            <p class="price">29,95 €/mes <span>(500-1000 facturas)</span></p>
-            <p>0,03 € por factura adicional</p>
-            <a href="#contacto" class="btn btn--sm">Contactar</a>
-          </div>
-          <div class="card">
-            <h3>Ultra</h3>
-            <p class="price">89,95 €/mes <span>(hasta 5000 facturas)</span></p>
-            <p>0,02 € por factura adicional</p>
-            <a href="#contacto" class="btn btn--sm">Contactar</a>
-          </div>
+  <!-- Por qué VeriQR -->
+  <section id="porque" class="section">
+    <div class="container grid-3">
+      <div class="card">
+        <h3>Conforme a normativa</h3>
+        <p>Nuestro sistema asegura que tus facturas incluyan un QR válido según la normativa vigente.</p>
+      </div>
+      <div class="card">
+        <h3>Registro inalterable</h3>
+        <p>Cada factura queda protegida contra modificaciones, garantizando integridad y seguridad.</p>
+      </div>
+      <div class="card">
+        <h3>Fácil integración</h3>
+        <p>Compatible con tus procesos de facturación actuales, sin necesidad de cambios drásticos.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Planes -->
+  <section id="planes" class="section alt">
+    <div class="container">
+      <h2>Planes</h2>
+      <div class="grid-3 pricing">
+        <div class="card">
+          <h3>Básico</h3>
+          <p class="price">14.95 €/mes <span>250 facturas</span></p>
+          <p>0.10 € por factura adicional</p>
+          <a href="#contacto" class="btn">Contactar</a>
+        </div>
+        <div class="card featured">
+          <h3>Pro</h3>
+          <p class="price">29.95 €/mes <span>500-1000 facturas</span></p>
+          <p>0.03 € por factura adicional</p>
+          <a href="#contacto" class="btn">Contactar</a>
+        </div>
+        <div class="card">
+          <h3>Ultra</h3>
+          <p class="price">89.95 €/mes <span>hasta 5000 facturas</span></p>
+          <p>0.02 € por factura adicional</p>
+          <a href="#contacto" class="btn">Contactar</a>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- FAQ -->
-    <section id="faq" class="section alt">
-      <div class="container">
-        <h2>Preguntas frecuentes</h2>
+  <!-- FAQ -->
+  <section id="faq" class="section">
+    <div class="container">
+      <h2>Preguntas Frecuentes</h2>
+      <details class="faq">
+        <summary>¿Es VeriQR legal?</summary>
+        <p>Sí, genera códigos QR conforme a la normativa vigente, apoyando el cumplimiento de requisitos técnicos y legales.</p>
+      </details>
+      <details class="faq">
+        <summary>¿Necesito cambiar mi software de facturación?</summary>
+        <p>No, VeriQR se integra fácilmente con tu sistema actual.</p>
+      </details>
+      <details class="faq">
+        <summary>¿Qué pasa si supero el límite de facturas?</summary>
+        <p>Solo pagarás la tarifa por factura adicional según tu plan.</p>
+      </details>
+    </div>
+  </section>
 
-        <details class="faq">
-          <summary>¿Necesito instalar algo?</summary>
-          <p>No, todo funciona en la nube. Solo necesitas conexión a internet.</p>
-        </details>
-
-        <details class="faq">
-          <summary>¿Mis datos están seguros?</summary>
-          <p>Sí, usamos cifrado avanzado y servidores en la UE para garantizar seguridad.</p>
-        </details>
-
-        <details class="faq">
-          <summary>¿Puedo cancelar cuando quiera?</summary>
-          <p>Por supuesto, no hay permanencia. Cancelas cuando quieras.</p>
-        </details>
-
-      </div>
-    </section>
-
-    <!-- Contacto -->
-    <section id="contacto" class="section cta">
-      <div class="container">
-        <h2>¿Interesado? Contáctanos</h2>
-        <form action="https://formspree.io/f/mdkdrlee" method="POST" class="form">
-          <div class="field">
-            <label for="name">Nombre</label>
-            <input type="text" id="name" name="name" required>
-          </div>
-          <div class="field">
-            <label for="email">Correo electrónico</label>
-            <input type="email" id="email" name="email" required>
-          </div>
-          <button type="submit" class="btn">Enviar</button>
-          <p class="form-msg">Te responderemos en breve ✅</p>
-        </form>
-      </div>
-    </section>
-
-  </main>
+  <!-- CTA -->
+  <section id="contacto" class="section cta">
+    <div class="container">
+      <h2>¿Listo para empezar?</h2>
+      <p>Déjanos tus datos y te contactaremos.</p>
+      <form class="form" id="contact-form">
+        <div class="field">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" required>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" required>
+        </div>
+        <button type="submit" class="btn">Enviar</button>
+        <p class="muted">Desde 14.95 €/mes</p>
+        <div class="form-msg" id="form-msg"></div>
+      </form>
+    </div>
+  </section>
 
   <!-- Footer -->
   <footer class="footer">
     <div class="container footer-inner">
-      <p>&copy; 2025 VeriQR. Todos los derechos reservados.</p>
-      <div class="footer-nav">
-        <a href="#">Aviso legal</a>
-        <a href="#">Política de privacidad</a>
-      </div>
+      <p>&copy; 2025 VeriQR</p>
+      <nav class="footer-nav">
+        <a href="aviso-legal.html">Aviso legal</a>
+        <a href="privacidad.html">Privacidad</a>
+        <a href="cookies.html">Cookies</a>
+      </nav>
     </div>
   </footer>
 
-  <!-- Cookies -->
-  <div class="cookie-banner" id="cookie-banner">
-    <p>Usamos cookies para mejorar tu experiencia. Puedes aceptar todas o solo las técnicas.</p>
-    <div class="cookie-actions">
-      <button class="btn btn--sm" id="accept-all">Aceptar todas</button>
-      <button class="btn btn--ghost btn--sm" id="accept-tech">Solo técnicas</button>
-    </div>
-  </div>
-
+  <!-- Script menú y formulario -->
   <script>
-    // Menú responsive
-    document.querySelector('.menu-toggle').addEventListener('click', ()=>{
-      document.querySelector('.nav').classList.toggle('open');
+    const toggle = document.querySelector(".menu-toggle");
+    const nav = document.querySelector(".nav");
+    toggle.addEventListener("click", () => {
+      nav.classList.toggle("open");
+    });
+    nav.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        nav.classList.remove("open");
+      });
     });
 
-    // Cookies
-    const banner = document.getElementById('cookie-banner');
-    document.getElementById('accept-all').onclick = ()=> banner.style.display="none";
-    document.getElementById('accept-tech').onclick = ()=> banner.style.display="none";
+    // Formulario
+    document.getElementById("contact-form").addEventListener("submit", function(e){
+      e.preventDefault();
+      document.getElementById("form-msg").textContent = "¡Gracias! Te contactaremos pronto.";
+      this.reset();
+    });
   </script>
-  <script>
-  const toggle = document.querySelector(".menu-toggle");
-  const nav = document.querySelector(".nav");
-
-  // abrir/cerrar con el botón
-  toggle.addEventListener("click", () => {
-    nav.classList.toggle("open");
-  });
-
-  // cerrar cuando haces clic en un enlace del menú
-  nav.querySelectorAll("a").forEach(link => {
-    link.addEventListener("click", () => {
-      nav.classList.remove("open");
-    });
-  });
-</script>
 </body>
 </html>
