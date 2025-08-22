@@ -1,149 +1,108 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="VeriQR: genera facturas con código QR conforme a Verifactu. Cumple la normativa vigente de forma simple, segura y profesional.">
-  <title>VeriQR - Facturas con QR conforme a Verifactu</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="VeriQR - Cumple con la normativa Verifactu. Generación de facturas con QR conforme a la normativa vigente. Simple, rápido y seguro." />
+  <title>VeriQR - Cumplimiento Verifactu con QR</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
 </head>
 <body>
-  <!-- NAV -->
+  <!-- NAVBAR -->
   <header class="navbar">
-    <div class="container nav-container">
-      <img src="logo-veriqr.png" alt="Logo VeriQR" class="logo">
-      <nav>
-        <ul class="nav-links">
-          <li><a href="#por-que">Por qué VeriQR</a></li>
-          <li><a href="#planes">Planes</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-        </ul>
-      </nav>
+    <div class="logo">
+      <img src="logo-veriqr.png" alt="VeriQR Logo">
     </div>
+    <nav class="nav-links" id="nav-links">
+      <a href="#planes">Planes</a>
+      <a href="#mockup">Ejemplo</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <button class="menu-toggle" id="menu-toggle">☰</button>
   </header>
 
   <!-- HERO -->
   <section class="hero">
-    <div class="container hero-content">
-      <div class="hero-text">
-        <h1>Factura con <span class="highlight">QR verificado</span></h1>
-        <p>Cumple con la normativa vigente de Verifactu de forma simple y segura.</p>
-        <div class="cta-buttons">
-          <a href="#contacto" class="btn btn-primary">Empieza gratis</a>
-          <a href="#planes" class="btn btn-secondary">Planes desde 14,95 €/mes</a>
-        </div>
-      </div>
-      <div class="hero-image">
-        <img src="mockup.png" alt="Ejemplo factura con QR">
+    <div class="hero-text">
+      <h1>Conforme a la normativa vigente</h1>
+      <p>Verificado para facilitar cumplimiento</p>
+      <small class="nota">VeriQR es un apoyo al SIF; el cumplimiento definitivo depende del entorno técnico del cliente y normativa actual.</small>
+      <div class="cta-buttons">
+        <a href="#contacto" class="btn-primary">Contactar</a>
+        <a href="#planes" class="btn-secondary">Ver planes desde 14,95 €/mes</a>
       </div>
     </div>
-  </section>
-
-  <!-- POR QUÉ VERIQR -->
-  <section id="por-que" class="why">
-    <div class="container">
-      <h2>¿Por qué elegir VeriQR?</h2>
-      <div class="features">
-        <div class="feature">
-          <span class="icon">🛡️</span>
-          <h3>Conforme a normativa</h3>
-          <p>Verificado para facilitar cumplimiento con Verifactu.</p>
-        </div>
-        <div class="feature">
-          <span class="icon">⚡</span>
-          <h3>Rápido y simple</h3>
-          <p>Sube tu factura y en segundos obtienes el QR oficial.</p>
-        </div>
-        <div class="feature">
-          <span class="icon">📂</span>
-          <h3>Registro inalterable</h3>
-          <p>Almacenamiento seguro de tus facturas verificadas.</p>
-        </div>
-      </div>
+    <div class="hero-image">
+      <img src="mockup.png" alt="Ejemplo de factura con QR">
     </div>
   </section>
 
   <!-- PLANES -->
-  <section id="planes" class="pricing">
-    <div class="container">
-      <h2>Nuestros Planes</h2>
-      <div class="pricing-grid">
-        <div class="plan">
-          <h3>Básico</h3>
-          <p class="price">14,95 €/mes</p>
-          <p>250 facturas incluidas</p>
-          <p>0,10 € por factura adicional</p>
-          <a href="#contacto" class="btn btn-outline">Contactar</a>
-        </div>
-        <div class="plan featured">
-          <h3>Pro</h3>
-          <p class="price">29,95 €/mes</p>
-          <p>500 - 1000 facturas incluidas</p>
-          <p>0,03 € por factura adicional</p>
-          <a href="#contacto" class="btn btn-outline">Contactar</a>
-        </div>
-        <div class="plan">
-          <h3>Ultra</h3>
-          <p class="price">89,95 €/mes</p>
-          <p>Hasta 5000 facturas incluidas</p>
-          <p>0,02 € por factura adicional</p>
-          <a href="#contacto" class="btn btn-outline">Contactar</a>
-        </div>
+  <section id="planes" class="planes">
+    <h2>Nuestros Planes</h2>
+    <div class="plan-cards">
+      <div class="plan">
+        <h3>Básico</h3>
+        <p><strong>14,95 €/mes</strong></p>
+        <p>Incluye 250 facturas</p>
+        <p>0,10 € por factura adicional</p>
+        <a href="#contacto" class="btn-primary">Contactar</a>
+      </div>
+      <div class="plan destacado">
+        <h3>Pro</h3>
+        <p><strong>29,95 €/mes</strong></p>
+        <p>500 - 1000 facturas</p>
+        <p>0,03 € por factura adicional</p>
+        <a href="#contacto" class="btn-primary">Contactar</a>
+      </div>
+      <div class="plan">
+        <h3>Ultra</h3>
+        <p><strong>89,95 €/mes</strong></p>
+        <p>Hasta 5000 facturas</p>
+        <p>0,02 € por factura adicional</p>
+        <a href="#contacto" class="btn-primary">Contactar</a>
       </div>
     </div>
   </section>
 
-  <!-- TESTIMONIO -->
- <section class="testimonials">
-  <h2>Lo que opinan quienes ya lo están probando</h2>
-  <div class="testimonial-grid">
-    <div class="testimonial-card">
-      <p class="quote">“Ahora sé que mis facturas cumplen con Verifactu y me ahorro preocupaciones con Hacienda.”</p>
-      <p class="author">— Juan, gestor contable</p>
-    </div>
-    <div class="testimonial-card">
-      <p class="quote">“Estamos probando VeriQR en nuestra asesoría y facilita mucho la transición a Verifactu.”</p>
-      <p class="author">— María, asesora fiscal</p>
-    </div>
-    <div class="testimonial-card">
-      <p class="quote">“Es simple, claro y pensado para autónomos que no queremos complicaciones técnicas.”</p>
-      <p class="author">— Pedro, comercio local</p>
-    </div>
-  </div>
-</section>
-
   <!-- CONTACTO -->
-  <section id="contacto" class="contact">
-    <div class="container">
-      <h2>Contacto</h2>
-      <p>Déjanos tu correo y te ayudaremos a implementar VeriQR en tu negocio.</p>
-      <form action="https://formspree.io/f/mdkdrlee" method="POST" class="contact-form">
-        <input type="email" name="email" placeholder="Tu email" required>
-        <button type="submit" class="btn btn-primary">Enviar</button>
-      </form>
-      <p class="cta-note">Desde 14,95 €/mes</p>
-    </div>
-  </section>
-
-  <!-- NOTA LEGAL -->
-  <section class="nota-legal">
-    <div class="container">
-      <p><strong>Nota:</strong> VeriQR es un apoyo al SIF; el cumplimiento definitivo depende del entorno técnico del cliente y normativa actual.</p>
-    </div>
+  <section id="contacto" class="contacto">
+    <h2>Contacto</h2>
+    <form action="https://formspree.io/f/tu-endpoint" method="POST">
+      <input type="text" name="nombre" placeholder="Tu nombre" required>
+      <input type="email" name="email" placeholder="Tu correo" required>
+      <textarea name="mensaje" placeholder="Escribe tu mensaje..." required></textarea>
+      <button type="submit" class="btn-primary">Enviar</button>
+      <p class="cta-precio">Desde 14,95 €/mes</p>
+    </form>
   </section>
 
   <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container footer-content">
-      <img src="logo-veriqr.png" alt="Logo VeriQR" class="footer-logo">
-      <ul class="footer-links">
-        <li><a href="aviso-legal.html">Aviso Legal</a></li>
-        <li><a href="privacidad.html">Política de Privacidad</a></li>
-        <li><a href="cookies.html">Política de Cookies</a></li>
-      </ul>
-      <p>📧 info@veriqr.es</p>
+  <footer>
+    <p>© 2025 VeriQR. Todos los derechos reservados.</p>
+    <div class="footer-links">
+      <a href="aviso-legal.html">Aviso Legal</a>
+      <a href="privacidad.html">Política de Privacidad</a>
+      <a href="cookies.html">Política de Cookies</a>
     </div>
   </footer>
+
+  <script>
+    // Toggle menú responsive
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+
+    // Cerrar menú al hacer clic en un enlace
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+      });
+    });
+  </script>
 </body>
 </html>
