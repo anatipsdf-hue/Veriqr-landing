@@ -37,7 +37,7 @@ img{display:block; max-width:100%; height:auto}
 .btn--ghost:hover{color:#fff; background:var(--brand)}
 .btn--sm{padding:.55rem .9rem; border-radius:.7rem; font-weight:700}
 
-.muted{color:var(--muted)}
+.muted{color:var(--muted); font-size:.85rem}
 .section{padding:4rem 0}
 .section.alt{background:#fff}
 
@@ -66,13 +66,13 @@ img{display:block; max-width:100%; height:auto}
 /* Hero */
 .hero{background:var(--brand); color:#fff}
 .hero-inner{display:grid; gap:2rem; align-items:center; padding:3rem 0}
-.hero-copy h1{font-size:2.2rem; line-height:1.2; margin:0 0 1rem}
-.hero-copy p{font-size:1.1rem; margin:0 0 1.5rem}
+.hero-copy h1{font-size:2.4rem; line-height:1.2; margin:0 0 1rem}
+.hero-copy p{font-size:1.15rem; margin:0 0 1.5rem}
 .hero-ctas{display:flex; gap:.75rem; flex-wrap:wrap}
 .hero-media img{border-radius:1rem; box-shadow:var(--shadow)}
 @media (min-width: 900px){
   .hero-inner{grid-template-columns:1.15fr .85fr}
-  .hero-copy h1{font-size:2.6rem}
+  .hero-copy h1{font-size:2.8rem}
 }
 
 /* Grids & Cards */
