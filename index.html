@@ -1,133 +1,216 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>VeriQR - Cumplimiento Normativa Verifactu</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="VeriQR: facturas con QR conforme a la normativa Veri*Factu. Registro inalterable, verificado para facilitar cumplimiento. Pensado para pymes, autónomos y gestorías." />
+  <title>VeriQR · Cumple con Veri*Factu de forma sencilla</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Header / Menú -->
-  <header>
-    <nav class="navbar">
-      <div class="logo">
-        <img src="logo-veriqr.png" alt="VeriQR">
-      </div>
-      <ul class="nav-links" id="menu">
-        <li><a href="#planes">Planes</a></li>
-        <li><a href="#mockup">Ejemplo</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
-    </nav>
+
+  <!-- HEADER -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a class="brand" href="#top" aria-label="Inicio VeriQR">
+        <img src="logo-veriqr.png" alt="Logotipo VeriQR" />
+      </a>
+
+      <nav>
+        <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+        <ul id="menu" class="nav-links">
+          <li><a href="#porque">Por qué</a></li>
+          <li><a href="#mockup">Ejemplo</a></li>
+          <li><a href="#planes">Planes</a></li>
+          <li><a href="#opiniones">Opiniones</a></li>
+          <li><a href="#contacto" class="btn-primary btn-sm">Empieza gratis</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <!-- Hero principal -->
-  <section class="hero">
-    <h1>Conforme a la normativa vigente</h1>
-    <p>Verificado para facilitar cumplimiento</p>
-    <p class="nota">*VeriQR es un apoyo al SIF; el cumplimiento definitivo depende del entorno técnico del cliente y normativa actual.</p>
-    <div class="cta-buttons">
-      <a href="#contacto" class="btn-primary">Empieza gratis</a>
-      <a href="#planes" class="btn-secondary">Ver planes desde 14.95 €/mes</a>
-    </div>
-  </section>
-
-  <!-- Mockup de factura con QR -->
-  <section id="mockup" class="mockup">
-    <h2>Así lucen tus facturas con QR</h2>
-    <img src="mockup.png" alt="Ejemplo de factura con QR">
-  </section>
-
-  <!-- Planes -->
-  <section id="planes" class="planes">
-    <h2>Nuestros Planes</h2>
-    <div class="planes-container">
-      <div class="plan">
-        <h3>Básico</h3>
-        <p><strong>14.95 €/mes</strong></p>
-        <p>250 facturas</p>
-        <p>0.10 €/factura adicional</p>
-        <a href="#contacto" class="btn-primary">Contactar</a>
-      </div>
-      <div class="plan destacado">
-        <h3>Pro</h3>
-        <p><strong>29.95 €/mes</strong></p>
-        <p>500-1000 facturas</p>
-        <p>0.03 €/factura adicional</p>
-        <a href="#contacto" class="btn-primary">Contactar</a>
-      </div>
-      <div class="plan">
-        <h3>Ultra</h3>
-        <p><strong>89.95 €/mes</strong></p>
-        <p>Hasta 5000 facturas</p>
-        <p>0.02 €/factura adicional</p>
-        <a href="#contacto" class="btn-primary">Contactar</a>
+  <!-- HERO -->
+  <section id="top" class="hero">
+    <div class="container hero-inner">
+      <h1>Conforme a la normativa vigente (Veri*Factu)</h1>
+      <p class="lead">Verificado para facilitar cumplimiento y <strong>registro inalterable</strong> en cada factura.</p>
+      <p class="nota">
+        *VeriQR es un apoyo al SIF; el cumplimiento definitivo depende del entorno técnico del cliente y la normativa actual.
+      </p>
+      <div class="cta-group">
+        <a href="#contacto" class="btn-primary">Empieza gratis</a>
+        <a href="#planes" class="btn-secondary">Ver planes desde 14,95 €/mes</a>
       </div>
     </div>
   </section>
 
-  <!-- Formulario de contacto -->
-  <section id="contacto" class="contacto">
-    <h2>Contáctanos</h2>
-    <form action="https://formspree.io/f/tu-form-id" method="POST">
-      <input type="text" name="nombre" placeholder="Tu nombre" required>
-      <input type="email" name="email" placeholder="Tu email" required>
-      <textarea name="mensaje" placeholder="Tu mensaje" required></textarea>
-      <button type="submit" class="btn-primary">Enviar</button>
-      <p class="cta-secundario">Desde 14.95 €/mes</p>
-    </form>
+  <!-- POR QUÉ VERIQR -->
+  <section id="porque" class="section">
+    <div class="container">
+      <h2>¿Por qué VeriQR?</h2>
+      <div class="grid-3">
+        <article class="card">
+          <h3>Conforme a normativa</h3>
+          <p>Adaptado a Veri*Factu para ayudarte a cumplir sin dolores de cabeza.</p>
+        </article>
+        <article class="card">
+          <h3>Registro inalterable</h3>
+          <p>Generamos registros que no se pueden manipular y son verificables.</p>
+        </article>
+        <article class="card">
+          <h3>Fácil de integrar</h3>
+          <p>Funciona con los flujos de pymes, autónomos y gestorías.</p>
+        </article>
+      </div>
+    </div>
   </section>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 VeriQR. Todos los derechos reservados.</p>
-    <ul>
-      <li><a href="aviso-legal.html">Aviso legal</a></li>
-      <li><a href="privacidad.html">Privacidad</a></li>
-      <li><a href="cookies.html">Cookies</a></li>
-    </ul>
-    <p>Contacto: <a href="mailto:info@veriqr.es">info@veriqr.es</a></p>
+  <!-- MOCKUP (EJEMPLO) -->
+  <section id="mockup" class="section alt">
+    <div class="container center">
+      <h2>Así luce una factura con QR</h2>
+      <p class="muted">Ejemplo visual para mostrar el resultado final que recibe el cliente.</p>
+      <img class="mockup-img" src="mockup.png" alt="Ejemplo de factura con código QR" />
+    </div>
+  </section>
+
+  <!-- PLANES -->
+  <section id="planes" class="section">
+    <div class="container">
+      <h2>Planes y precios</h2>
+      <div class="grid-3 pricing">
+        <article class="card">
+          <h3>Básico</h3>
+          <p class="price">14,95 €/mes</p>
+          <p class="sub">Hasta 250 facturas</p>
+          <p class="muted">0,10 € por factura adicional</p>
+          <a href="#contacto" class="btn-primary btn-block">Contactar</a>
+        </article>
+
+        <article class="card featured">
+          <span class="badge">Más elegido</span>
+          <h3>Pro</h3>
+          <p class="price">29,95 €/mes</p>
+          <p class="sub">500 – 1000 facturas</p>
+          <p class="muted">0,03 € por factura adicional</p>
+          <a href="#contacto" class="btn-primary btn-block">Contactar</a>
+        </article>
+
+        <article class="card">
+          <h3>Ultra</h3>
+          <p class="price">89,95 €/mes</p>
+          <p class="sub">Hasta 5000 facturas</p>
+          <p class="muted">0,02 € por factura adicional</p>
+          <a href="#contacto" class="btn-primary btn-block">Contactar</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- OPINIONES / TESTIMONIOS -->
+  <section id="opiniones" class="section alt">
+    <div class="container">
+      <h2>Opiniones</h2>
+      <div class="grid-3">
+        <blockquote class="testimonial card">
+          <p>“Para nuestra gestoría ha sido clave: podemos garantizar a los clientes un flujo con QR conforme a normativa sin cambiarles el software.”</p>
+          <footer>— Responsable en Gestoría G., sector pymes</footer>
+        </blockquote>
+        <blockquote class="testimonial card">
+          <p>“El registro inalterable nos da tranquilidad. La adopción fue rápida y el equipo de soporte, impecable.”</p>
+          <footer>— Asesor fiscal independiente</footer>
+        </blockquote>
+        <blockquote class="testimonial card">
+          <p>“Como autónomo, necesitaba algo simple y legal. Subo mis facturas y recibo el PDF con QR listo para enviar.”</p>
+          <footer>— Autónomo (retail)</footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="section cta">
+    <div class="container">
+      <h2>Solicita información</h2>
+      <p class="muted">Empezamos desde <strong>14,95 €/mes</strong>. Te contactamos en menos de 24h laborables.</p>
+
+      <form id="contact-form" class="form" action="https://formspree.io/f/mdkdrlee" method="POST">
+        <label class="sr-only" for="name">Nombre</label>
+        <input id="name" name="name" type="text" placeholder="Tu nombre" required />
+
+        <label class="sr-only" for="email">Correo electrónico</label>
+        <input id="email" name="email" type="email" placeholder="Tu email" required />
+
+        <label class="sr-only" for="message">Mensaje</label>
+        <textarea id="message" name="message" placeholder="Cuéntanos qué necesitas (volumen, software actual…)" rows="4"></textarea>
+
+        <button type="submit" class="btn-primary">Enviar</button>
+        <p id="form-msg" class="form-msg" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© 2025 VeriQR · Cumplimiento Veri*Factu</p>
+      <nav class="footer-nav">
+        <a href="aviso-legal.html">Aviso legal</a>
+        <a href="privacidad.html">Privacidad</a>
+        <a href="cookies.html">Cookies</a>
+      </nav>
+      <p><a href="mailto:info@veriqr.es">info@veriqr.es</a></p>
+    </div>
   </footer>
 
-  <!-- Banner de cookies -->
-  <div id="cookie-banner" class="cookie-banner">
-    <p>Usamos cookies para mejorar tu experiencia. 
-      <a href="cookies.html">Leer más</a>
-    </p>
-    <button id="accept-all">Aceptar todas</button>
-    <button id="accept-tech">Solo técnicas</button>
+  <!-- COOKIES -->
+  <div id="cookie-banner" class="cookie-banner" role="dialog" aria-live="polite" aria-label="Aviso de cookies">
+    <p>Usamos cookies técnicas para mejorar tu experiencia. <a href="cookies.html">Más info</a></p>
+    <div class="cookie-actions">
+      <button id="accept-all" class="btn-primary btn-sm">Aceptar todas</button>
+      <button id="accept-tech" class="btn-secondary btn-sm">Solo técnicas</button>
+    </div>
   </div>
 
-  <!-- JS -->
+  <!-- SCRIPTS -->
   <script>
-    // Menú móvil
+    // Menú móvil (abrir/cerrar y autocerrar al hacer click en un enlace)
     const toggle = document.getElementById('menu-toggle');
     const menu = document.getElementById('menu');
     toggle.addEventListener('click', () => menu.classList.toggle('active'));
-    menu.querySelectorAll("a").forEach(link => 
-      link.addEventListener("click", () => menu.classList.remove("active"))
-    );
+    menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => menu.classList.remove('active')));
 
-    // Cookies
-    const banner = document.getElementById("cookie-banner");
-    const acceptAll = document.getElementById("accept-all");
-    const acceptTech = document.getElementById("accept-tech");
+    // Formspree (mensaje de éxito/error sin salir de la página)
+    const form = document.getElementById('contact-form');
+    const formMsg = document.getElementById('form-msg');
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      formMsg.textContent = 'Enviando…';
+      try {
+        const data = new FormData(form);
+        const res = await fetch(form.action, { method: 'POST', body: data, headers: { 'Accept': 'application/json' }});
+        if (res.ok) {
+          form.reset();
+          formMsg.textContent = '¡Gracias! Te contactaremos muy pronto.';
+        } else {
+          formMsg.textContent = 'Hubo un error. Inténtalo de nuevo.';
+        }
+      } catch {
+        formMsg.textContent = 'No hay conexión. Inténtalo más tarde.';
+      }
+    });
 
-    if(!localStorage.getItem("cookies-accepted")){
-      banner.style.display = "block";
+    // Cookies (ocultar banner al aceptar)
+    const banner = document.getElementById('cookie-banner');
+    const acceptAll = document.getElementById('accept-all');
+    const acceptTech = document.getElementById('accept-tech');
+    if (!localStorage.getItem('cookies-accepted')) {
+      banner.style.display = 'flex';
     }
-
-    acceptAll.onclick = () => {
-      localStorage.setItem("cookies-accepted", "all");
-      banner.style.display = "none";
-    };
-
-    acceptTech.onclick = () => {
-      localStorage.setItem("cookies-accepted", "tech");
-      banner.style.display = "none";
-    };
+    const accept = (mode) => { localStorage.setItem('cookies-accepted', mode); banner.style.display = 'none'; }
+    acceptAll.addEventListener('click', () => accept('all'));
+    acceptTech.addEventListener('click', () => accept('tech'));
   </script>
 </body>
 </html>
