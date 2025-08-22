@@ -3,100 +3,135 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>VeriQR - Facturación con QR Oficial</title>
-  <meta name="description" content="VeriQR: conforme a la normativa vigente, verificado para facilitar cumplimiento. Facturas electrónicas con QR de forma sencilla.">
+  <meta name="description" content="VeriQR: genera facturas con código QR conforme a Verifactu. Cumple la normativa vigente de forma simple, segura y profesional.">
+  <title>VeriQR - Facturas con QR conforme a Verifactu</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-  <!-- HEADER -->
-  <header>
-    <div class="brand">
-      <img src="logo-veriqr.png" alt="Logo VeriQR">
+  <!-- NAV -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <img src="logo-veriqr.png" alt="Logo VeriQR" class="logo">
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#por-que">Por qué VeriQR</a></li>
+          <li><a href="#planes">Planes</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
     </div>
-    <nav>
-      <ul>
-        <li><a href="#planes">Planes</a></li>
-        <li><a href="#mockup">Ejemplo</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-    </nav>
   </header>
 
   <!-- HERO -->
   <section class="hero">
-    <h1>Facturación con QR conforme a normativa</h1>
-    <p>Verificado para facilitar cumplimiento y garantizar confianza.</p>
-    <div class="actions">
-      <a href="#contacto" class="btn">Empieza Gratis</a>
-      <a href="#planes" class="btn btn--ghost">Ver planes desde 14.95€/mes</a>
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h1>Factura con <span class="highlight">QR verificado</span></h1>
+        <p>Cumple con la normativa vigente de Verifactu de forma simple y segura.</p>
+        <div class="cta-buttons">
+          <a href="#contacto" class="btn btn-primary">Empieza gratis</a>
+          <a href="#planes" class="btn btn-secondary">Planes desde 14,95 €/mes</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="mockup.png" alt="Ejemplo factura con QR">
+      </div>
     </div>
-    <p class="muted">VeriQR es un apoyo al SIF; el cumplimiento definitivo depende del entorno técnico del cliente y normativa actual.</p>
   </section>
 
-  <!-- MOCKUP -->
-  <section id="mockup" class="mockup" style="text-align:center; padding:3rem 2rem;">
-    <h2>Así luce tu factura con QR</h2>
-    <img src="mockup.png" alt="Ejemplo de factura con QR" style="max-width:800px; width:100%; border:1px solid #e5e7eb; border-radius:1rem; margin-top:1.5rem;">
+  <!-- POR QUÉ VERIQR -->
+  <section id="por-que" class="why">
+    <div class="container">
+      <h2>¿Por qué elegir VeriQR?</h2>
+      <div class="features">
+        <div class="feature">
+          <span class="icon">🛡️</span>
+          <h3>Conforme a normativa</h3>
+          <p>Verificado para facilitar cumplimiento con Verifactu.</p>
+        </div>
+        <div class="feature">
+          <span class="icon">⚡</span>
+          <h3>Rápido y simple</h3>
+          <p>Sube tu factura y en segundos obtienes el QR oficial.</p>
+        </div>
+        <div class="feature">
+          <span class="icon">📂</span>
+          <h3>Registro inalterable</h3>
+          <p>Almacenamiento seguro de tus facturas verificadas.</p>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- PLANES -->
   <section id="planes" class="pricing">
-    <h2>Planes y precios</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>Básico</h3>
-        <div class="price">14.95 €/mes</div>
-        <p>Incluye hasta 250 facturas</p>
-        <p>0.10 € por factura adicional</p>
-        <a href="#contacto" class="btn">Contactar</a>
+    <div class="container">
+      <h2>Nuestros Planes</h2>
+      <div class="pricing-grid">
+        <div class="plan">
+          <h3>Básico</h3>
+          <p class="price">14,95 €/mes</p>
+          <p>250 facturas incluidas</p>
+          <p>0,10 € por factura adicional</p>
+          <a href="#contacto" class="btn btn-outline">Contactar</a>
+        </div>
+        <div class="plan featured">
+          <h3>Pro</h3>
+          <p class="price">29,95 €/mes</p>
+          <p>500 - 1000 facturas incluidas</p>
+          <p>0,03 € por factura adicional</p>
+          <a href="#contacto" class="btn btn-outline">Contactar</a>
+        </div>
+        <div class="plan">
+          <h3>Ultra</h3>
+          <p class="price">89,95 €/mes</p>
+          <p>Hasta 5000 facturas incluidas</p>
+          <p>0,02 € por factura adicional</p>
+          <a href="#contacto" class="btn btn-outline">Contactar</a>
+        </div>
       </div>
+    </div>
+  </section>
 
-      <div class="card destacado">
-        <h3>Pro</h3>
-        <div class="price">29.95 €/mes</div>
-        <p>Incluye 500-1000 facturas</p>
-        <p>0.03 € por factura adicional</p>
-        <a href="#contacto" class="btn">Contactar</a>
-      </div>
-
-      <div class="card">
-        <h3>Ultra</h3>
-        <div class="price">89.95 €/mes</div>
-        <p>Incluye hasta 5000 facturas</p>
-        <p>0.02 € por factura adicional</p>
-        <a href="#contacto" class="btn">Contactar</a>
-      </div>
+  <!-- TESTIMONIO -->
+  <section class="testimonial">
+    <div class="container">
+      <p class="quote">“Más de 50 empresas ya confían en VeriQR para cumplir con Verifactu de forma segura y sin complicaciones.”</p>
     </div>
   </section>
 
   <!-- CONTACTO -->
   <section id="contacto" class="contact">
-    <h2>Contáctanos</h2>
-    <p>Déjanos tus datos y te responderemos lo antes posible.</p>
-    <form action="mailto:info@veriqr.es" method="post" enctype="text/plain">
-      <label for="name">Nombre</label>
-      <input type="text" id="name" name="name" required>
+    <div class="container">
+      <h2>Contacto</h2>
+      <p>Déjanos tu correo y te ayudaremos a implementar VeriQR en tu negocio.</p>
+      <form action="https://formspree.io/f/mdkdrlee" method="POST" class="contact-form">
+        <input type="email" name="email" placeholder="Tu email" required>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+      <p class="cta-note">Desde 14,95 €/mes</p>
+    </div>
+  </section>
 
-      <label for="email">Correo electrónico</label>
-      <input type="email" id="email" name="email" required>
-
-      <label for="message">Mensaje</label>
-      <textarea id="message" name="message" rows="4" required></textarea>
-
-      <button type="submit">Enviar</button>
-      <p style="margin-top:1rem; font-size:.9rem; color:#6b7280;">Desde 14.95 €/mes</p>
-    </form>
+  <!-- NOTA LEGAL -->
+  <section class="nota-legal">
+    <div class="container">
+      <p><strong>Nota:</strong> VeriQR es un apoyo al SIF; el cumplimiento definitivo depende del entorno técnico del cliente y normativa actual.</p>
+    </div>
   </section>
 
   <!-- FOOTER -->
-  <footer>
-    <p>&copy; 2025 VeriQR. Todos los derechos reservados.</p>
-    <p>
-      <a href="aviso-legal.html">Aviso legal</a> · 
-      <a href="privacidad.html">Privacidad</a> · 
-      <a href="cookies.html">Cookies</a>
-    </p>
+  <footer class="footer">
+    <div class="container footer-content">
+      <img src="logo-veriqr.png" alt="Logo VeriQR" class="footer-logo">
+      <ul class="footer-links">
+        <li><a href="aviso-legal.html">Aviso Legal</a></li>
+        <li><a href="privacidad.html">Política de Privacidad</a></li>
+        <li><a href="cookies.html">Política de Cookies</a></li>
+      </ul>
+      <p>📧 info@veriqr.es</p>
+    </div>
   </footer>
 </body>
 </html>
